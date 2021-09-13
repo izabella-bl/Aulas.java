@@ -11,13 +11,13 @@ public class Produto {
         System.out.println("Bem Vindo! Digite os dados dos produtos :");
 
         System.out.println("Digite o nome do produto: ");
-        String nome = sc.next();
+        String nome = sc.nextLine();
 
         System.out.println("Digite a descrição: ");
-        String descricao = sc.next();
+        String descricao = sc.nextLine();
 
         System.out.println("Digite a categoria do produto: ");
-        String categoria = sc.next();
+        String categoria = sc.nextLine();
 
         System.out.print("Digite o valor do produto:R$ ");
         double valor = sc.nextDouble();

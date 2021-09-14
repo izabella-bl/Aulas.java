@@ -20,7 +20,5 @@ public class Cliente {
              System.out.println("Cliente tem que ser maior de idade!");
          }
 
-
-
     }
 }

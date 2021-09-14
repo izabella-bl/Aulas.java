@@ -1,4 +1,4 @@
-package Modulo1.Aula3;
+package Exercicios;
 
 import java.util.Scanner;
 
@@ -13,12 +13,12 @@ public class Cliente {
         System.out.print("Digite a idade do cliente: ");
         short idade = var.nextShort();
 
-         if(idade >= 18){
-             System.out.println("Cliente gravado com sucesso!\n"+"Nome: "+nome+"\n"+"Idade: "+idade);
-         }
-         else{
-             System.out.println("Cliente tem que ser maior de idade!");
-         }
+        if(idade >= 18){
+            System.out.println("Cliente gravado com sucesso!\n"+"Nome: "+nome+"\n"+"Idade: "+idade);
+        }
+        else{
+            System.out.println("Cliente tem que ser maior de idade!");
+        }
 
 
 

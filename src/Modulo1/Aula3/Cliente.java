@@ -8,7 +8,7 @@ public class Cliente {
 
         System.out.println("-------------Cadastro de Cliente-------------");
         System.out.println("Bem vindo , Digite as informações do cliente:");
-        System.out.print("Digite o nome do cliente: ");
+        System.out.print("Digite o nome completo do cliente: ");
         String nome = var.nextLine();
         System.out.print("Digite a idade do cliente: ");
         short idade = var.nextShort();

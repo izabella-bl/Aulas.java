@@ -1,4 +1,4 @@
-package Exercicios;
+package Exercicios.Variaveis;
 
 
 import java.util.Scanner;

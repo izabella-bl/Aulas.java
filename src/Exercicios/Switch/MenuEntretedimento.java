@@ -1,4 +1,4 @@
-package Exercicios;
+package Exercicios.Switch;
 
 import java.util.Scanner;
 

@@ -12,7 +12,7 @@ public class CalculoDeTaxa {
     public   double TaxaSaque(double valor) {
          vez++;
          if(vez % 5 == 0){
-             return valor + 1.30;
+             return valor - 1.30;
          }
            return valor;
 

@@ -5,7 +5,7 @@ public class CalculoDeTaxa {
     private int vez;
 
     public double TaxaTransferencia( double valor) {
-        double calculo =  (valor * 0.000001);
+        double calculo =  (valor * 0.00001);
         return calculo + valor;
     }
 

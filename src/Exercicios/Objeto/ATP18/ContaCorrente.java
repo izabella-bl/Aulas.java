@@ -1,12 +1,12 @@
 package Exercicios.Objeto.ATP18;
 
-import java.math.BigDecimal;
+
 
 public class ContaCorrente {
     private int agencia;
     private int numero;
     private  long cogidoCliente;
-    private BigDecimal saldo;
+    private double saldo;
 
     public int getAgencia() {
         return agencia;
@@ -32,11 +32,11 @@ public class ContaCorrente {
         this.cogidoCliente = cogidoCliente;
     }
 
-    public BigDecimal getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(BigDecimal saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 }

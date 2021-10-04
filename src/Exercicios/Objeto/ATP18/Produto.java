@@ -1,16 +1,16 @@
 package Exercicios.Objeto.ATP18;
 
 public class Produto {
-    private long codigo;
+    private int codigo;
     private String nome;
     private String descricao;
-    private  double valor;
+    private double valor;
 
-    public long getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(long codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 

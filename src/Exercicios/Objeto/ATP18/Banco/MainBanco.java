@@ -1,4 +1,6 @@
-package Exercicios.Objeto.ATP18;
+package Exercicios.Objeto.ATP18.Banco;
+
+import Exercicios.Objeto.ATP18.Banco.ContaCorrente;
 
 public class MainBanco {
     public static void main(String[] args) {

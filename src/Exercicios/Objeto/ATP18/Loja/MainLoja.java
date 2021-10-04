@@ -1,4 +1,4 @@
-package Exercicios.Objeto.ATP18;
+package Exercicios.Objeto.ATP18.Loja;
 
 public class MainLoja {
     public static void main(String[] args) {

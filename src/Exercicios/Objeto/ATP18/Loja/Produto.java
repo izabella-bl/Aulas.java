@@ -1,4 +1,4 @@
-package Exercicios.Objeto.ATP18;
+package Exercicios.Objeto.ATP18.Loja;
 
 public class Produto {
     private int codigo;

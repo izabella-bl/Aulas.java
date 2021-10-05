@@ -51,7 +51,12 @@ public class MainPessoa {
         pessoa[4]=p5;
 
         for (Pessoa p:pessoa) {
-            System.out.printf("\nNome completo: %s %s\nIdade: %d\nRG: %d\nCPF: %s\nCodigo: %d\n",p.getNome(),p.getSobrenome(),p.getIdade(),p.getRg(),p.getCpf(),p.getCodigo());
+            System.out.printf("\nNome completo: %s %s" +
+                    "\nIdade: %d" +
+                    "\nRG: %d" +
+                    "\nCPF: %s" +
+                    "\nCodigo: %d" +
+                    "\n",p.getNome(),p.getSobrenome(),p.getIdade(),p.getRg(),p.getCpf(),p.getCodigo());
         }
 
     }

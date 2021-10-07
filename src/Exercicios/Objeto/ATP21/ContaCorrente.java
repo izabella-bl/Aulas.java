@@ -7,17 +7,20 @@ public class ContaCorrente extends Conta{
 
     @Override
     public  void transferencia( double valorTransferencia){
-        numTransferencia ++;
-        super.transferencia(valorTransferencia);
+        if(this.saldoSuficente(valorTransferencia)){
+            numTransferencia ++;
+            super.transferencia(valorTransferencia);
 
-        if(numTransferencia % 5 == 0){
-            double novoSaldo = this.getSaldo() - taxatransferencia - taxaManutencao;
-            this.setSaldo(novoSaldo);
+            if(numTransferencia % 5 == 0){
+                double novoSaldo = this.getSaldo() - taxatransferencia - taxaManutencao;
+                this.setSaldo(novoSaldo);
+            }
+            else{
+                double novoSaldo = this.getSaldo()- taxatransferencia ;
+                this.setSaldo(novoSaldo);
+            }
         }
-        else{
-            double novoSaldo = this.getSaldo()- taxatransferencia ;
-            this.setSaldo(novoSaldo);
-        }
+
     }
 
 

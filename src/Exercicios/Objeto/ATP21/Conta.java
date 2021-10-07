@@ -24,7 +24,19 @@ public class Conta {
     }
 
     public void  transferencia(double valorDeTransferencia){
-       saldo-=valorDeTransferencia;
+      if(this.saldoSuficente(valorDeTransferencia)){
+          saldo-=valorDeTransferencia;
+      }
 
+    }
+
+    public boolean saldoSuficente(double valor){
+        if(saldo < valor){
+            System.out.println("Saldo insuficinete !");
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }

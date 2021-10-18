@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class LivroController {
     private  ArrayList<Livro> livro;
 
-    public LivroController ( ) {
+    public LivroController () {
         livro = new ArrayList<>();
 
     }
@@ -21,14 +21,44 @@ public class LivroController {
         return livro;
     }
 
-    public  void update(Livro l){
-        if(this.livro.contains(l)) {
-            delete(l);
-            create(l);
+    public  void update(Livro l, int op){
+        for (int i = 0; i < livro.size(); i++) {
+
+            if(this.livro.get(i).getId() == l.getId()) {
+                if(op == 1){
+                    Livro livroAntigo =  this.livro.get(i);
+                    l.setGenero(livroAntigo.getGenero());
+                    l.setDescricao(livroAntigo.getDescricao());
+                    l.setAnoDeLancamento(livroAntigo.getAnoDeLancamento());
+                    livro.set(i,l);
+                }
+               else if(op == 2){
+                    Livro livroAntigo =  this.livro.get(i);
+                    l.setGenero(livroAntigo.getGenero());
+                    l.setTitulo(livroAntigo.getTitulo());
+                    l.setAnoDeLancamento(livroAntigo.getAnoDeLancamento());
+                    livro.set(i,l);
+                }
+               else if(op == 3){
+                    Livro livroAntigo =  this.livro.get(i);
+                    l.setDescricao(livroAntigo.getDescricao());
+                    l.setTitulo(livroAntigo.getTitulo());
+                    l.setAnoDeLancamento(livroAntigo.getAnoDeLancamento());
+                    livro.set(i,l);
+                }
+               else if(op == 4){
+                    Livro livroAntigo =  this.livro.get(i);
+                    l.setGenero(livroAntigo.getGenero());
+                    l.setTitulo(livroAntigo.getTitulo());
+                    l.setDescricao(livroAntigo.getDescricao());
+                    livro.set(i,l);
+                }
+            }
+
         }
     }
 
-    private void delete(Livro l) {
+    public void delete(Livro l) {
         livro.remove(l);
     }
 }

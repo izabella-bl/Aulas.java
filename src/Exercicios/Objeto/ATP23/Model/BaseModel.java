@@ -3,6 +3,7 @@ package Exercicios.Objeto.ATP23.Model;
 import java.util.UUID;
 
 public class BaseModel {
+
     private UUID id;
 
     public BaseModel(){
@@ -17,4 +18,6 @@ public class BaseModel {
         UUID uniqueKey = UUID.randomUUID();
         this.id = uniqueKey;
     }
+
+
 }

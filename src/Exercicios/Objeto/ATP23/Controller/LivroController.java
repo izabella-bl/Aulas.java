@@ -24,7 +24,7 @@ public class LivroController {
     public  void update(Livro l, int op){
         for (int i = 0; i < livro.size(); i++) {
 
-            if(this.livro.get(i).getId() == l.getId()) {
+            if(this.livro.get(i).getId().equals(l.getId())) {
                 if(op == 1){
                     Livro livroAntigo =  this.livro.get(i);
                     l.setGenero(livroAntigo.getGenero());

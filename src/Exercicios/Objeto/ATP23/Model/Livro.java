@@ -52,7 +52,7 @@ public class Livro extends BaseModel{
     public boolean equals(Object obj) {
         Livro livro = (Livro) obj;
 
-        if(this.getId() == livro.getId()){
+        if(this.getId().equals(livro.getId()) ){
             return true;
         }
         else{

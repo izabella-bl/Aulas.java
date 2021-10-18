@@ -124,9 +124,9 @@ public class MainView {
 
     static int  menuAtulizar(){
         System.out.println("O que você desejar atulizar ?");
-        System.out.println("1 - Título" +
-                           "2 - Descrição" +
-                           "3 - Gênero" +
+        System.out.println("1 - Título\n" +
+                           "2 - Descrição\n" +
+                           "3 - Gênero\n" +
                            "4 - Ano de lançamento\n");
 
         System.out.print("Digite sua opção:");

@@ -25,7 +25,7 @@ public class Main {
      dados.adicionar(p);
      dados.adicionar(a);
      dados.adicionar(repetida);
-git
+
      if(dados.contains(p) == true){
          System.out.println("Contém na lista!");
      }

@@ -8,7 +8,7 @@ public class Dados {
 
     public int size(){
 
-        return posicaoAtual;
+        return posicaoAtual ;
     }
 
     public Dados() {
@@ -23,6 +23,7 @@ public class Dados {
             lista[posicaoAtual] = obj;
             posicaoAtual ++;
 
+
         } else {
             tamanhoAtual = tamanhoAtual + 5;  //Aumenta o tamanho do array atual
             Object[] lista2 = new Object[tamanhoAtual];
@@ -31,6 +32,8 @@ public class Dados {
                 lista2[i] = lista[i];
             }
             lista = lista2;     //Lista recebe os dados de lista2
+            lista[posicaoAtual] = obj;
+            posicaoAtual ++;
         }
             mensagem = "Salvo com sucesso";
             return mensagem;

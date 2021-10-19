@@ -22,9 +22,27 @@ public class Main {
      repetida.sobreNome = "Barros";
      repetida.idade = 21;
 
+     Pessoa a2 = new Pessoa();
+     a2.nome = "Izabella";
+     a2.sobreNome = "Barros";
+     a2.idade = 21;
+
+     Pessoa a3 = new Pessoa();
+     a3.nome = "Izabella";
+     a3.sobreNome = "Barros";
+     a3.idade = 21;
+
+     Pessoa a4 = new Pessoa();
+     a4.nome = "Izabella";
+     a4.sobreNome = "Barros";
+     a4.idade = 21;
+
      dados.adicionar(p);
      dados.adicionar(a);
      dados.adicionar(repetida);
+     dados.adicionar(a2);
+     dados.adicionar(a3);
+     dados.adicionar(a4);
 
      if(dados.contains(p) == true){
          System.out.println("Contém na lista!");

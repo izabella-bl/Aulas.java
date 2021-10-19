@@ -1,7 +1,5 @@
 package Exercicios.Objeto.ATP26;
 
-import java.util.Arrays;
-
 public class Dados {
 
     int posicaoAtual = 0;
@@ -10,7 +8,7 @@ public class Dados {
 
     public int size(){
 
-        return posicaoAtual + 1;
+        return posicaoAtual;
     }
 
     public Dados() {
@@ -63,6 +61,16 @@ public class Dados {
 
         for (int i = posicao; i < lista.length-1; i++) { // (lista.length-1) porque posição 0 vai para 1 , ai tem que iniciar -1 para ir para 0.
             this.lista[i] = this.lista[i+1];          //Organiza os dados para ser removido, jogando os dados anterior para poisção a frente
+        }
+    }
+
+    public void retorno(){
+        for (int i = 0; i < lista.length; i++) {;
+
+            if (lista[i] != null) {
+                System.out.println(lista[i]);
+            }
+
         }
     }
 }

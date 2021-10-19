@@ -17,6 +17,6 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return String.format("Nome Completo: %s %s\n Idade:",this.nome,this.sobreNome,this.idade);
+        return String.format("\nNome Completo: %s %s\nIdade: %d",this.nome,this.sobreNome,this.idade);
     }
 }

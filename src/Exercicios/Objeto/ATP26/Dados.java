@@ -62,7 +62,7 @@ public class Dados {
     public void reorganiza(int posicao){
 
         for (int i = posicao; i < lista.length-1; i++) { // (lista.length-1) porque posição 0 vai para 1 , ai tem que iniciar -1 para ir para 0.
-            this.lista[i] = this.lista[i+1];          //Organiza o dados para ser removido, jogando os dados anterior para poisção a frente
+            this.lista[i] = this.lista[i+1];          //Organiza os dados para ser removido, jogando os dados anterior para poisção a frente
         }
     }
 }

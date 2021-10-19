@@ -26,7 +26,7 @@ public class Dados {
             posicaoAtual ++;
 
         } else {
-            tamanhoAtual = tamanhoAtual * 2;  //Aumenta o tamanho do array atual
+            tamanhoAtual = tamanhoAtual + 5;  //Aumenta o tamanho do array atual
             Object[] lista2 = new Object[tamanhoAtual];
 
             for (int i = 0; i < lista.length; i++) {

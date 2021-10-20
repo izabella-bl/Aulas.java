@@ -7,10 +7,12 @@ public class Pessoa {
 
     @Override
     public boolean equals(Object obj) {
-        Pessoa pessoa = (Pessoa) obj;
+        if(obj instanceof  Pessoa) {
+            Pessoa pessoa = (Pessoa) obj;
 
-        if (this.nome.equals(pessoa.nome) && this.sobreNome.equals(pessoa.sobreNome)){
-           return true;
+            if (this.nome.equals(pessoa.nome) && this.sobreNome.equals(pessoa.sobreNome)) {
+                return true;
+            }
         }
         return false;
     }

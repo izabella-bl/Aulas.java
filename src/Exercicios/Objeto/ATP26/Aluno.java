@@ -1,6 +1,5 @@
 package Exercicios.Objeto.ATP26;
 
-import java.util.Objects;
 
 public class Aluno extends Pessoa{
     public int matricula;
@@ -9,11 +8,12 @@ public class Aluno extends Pessoa{
 
     @Override
     public boolean equals(Object obj) {
-      Aluno aluno = (Aluno) obj;
-
-      if (this.nome.equals(aluno.nome)){
-          return true;
-      }
+        if(obj instanceof Aluno){
+            Aluno aluno = (Aluno) obj;
+            if (this.nome.equals(aluno.nome) && this.sobreNome.equals(aluno.sobreNome)){
+                return true;
+            }
+        }
       return  false;
     }
 

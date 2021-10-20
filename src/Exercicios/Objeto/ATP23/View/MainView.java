@@ -51,6 +51,7 @@ public class MainView {
 
                 case 2:
                     ListaLivro(livro);
+                    break;
 
                 case 3:
                      do{
@@ -153,11 +154,13 @@ public class MainView {
                 String Id2 =digiteId();
                 UUID id2 = UUID.fromString(Id2);
                 l.setId(id2);
+
                 System.out.println("Digite a nova Descrição:");
                 String descricao = sc.nextLine();
                 l.setDescricao(descricao);
 
                 lc.update(l,op);
+
 
                 break;
 

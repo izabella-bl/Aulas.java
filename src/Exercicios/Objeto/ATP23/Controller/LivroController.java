@@ -61,4 +61,9 @@ public class LivroController {
     public void delete(Livro l) {
         livro.remove(l);
     }
+
+    public boolean contem(Livro l){
+        return this.livro.contains(l);
+    }
+
 }

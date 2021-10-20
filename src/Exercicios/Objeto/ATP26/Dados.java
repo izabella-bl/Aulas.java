@@ -15,16 +15,10 @@ public class Dados {
         this.lista = new Object[tamanhoAtual];
     }
 
-    public String adicionar(Object obj) {
-        String mensagem;
 
-        if (posicaoAtual < lista.length) {
+    public  void verificar(){
+        if (posicaoAtual >= lista.length) {
 
-            lista[posicaoAtual] = obj;
-            posicaoAtual ++;
-
-
-        } else {
             tamanhoAtual = tamanhoAtual + 5;  //Aumenta o tamanho do array atual
             Object[] lista2 = new Object[tamanhoAtual];
 
@@ -32,9 +26,16 @@ public class Dados {
                 lista2[i] = lista[i];
             }
             lista = lista2;     //Lista recebe os dados de lista2
+        }
+    }
+
+    public String adicionar(Object obj) {
+        String mensagem;
+             verificar();
+
             lista[posicaoAtual] = obj;
             posicaoAtual ++;
-        }
+
             mensagem = "Salvo com sucesso";
             return mensagem;
     }
@@ -53,7 +54,6 @@ public class Dados {
         for (int i = 0; i < lista.length; i++) {
             if( lista[i].equals(obj)){
                 reorganiza(i);
-                posicaoAtual --;
                 return "removido com sucesso";
             }
         }
@@ -65,6 +65,7 @@ public class Dados {
         for (int i = posicao; i < lista.length-1; i++) { // (lista.length-1) porque posição 0 vai para 1 , ai tem que iniciar -1 para ir para 0.
             this.lista[i] = this.lista[i+1];          //Organiza os dados para ser removido, jogando os dados anterior para poisção a frente
         }
+        posicaoAtual --;
     }
 
     public void retorno(){

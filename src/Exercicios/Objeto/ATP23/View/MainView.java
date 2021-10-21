@@ -34,7 +34,7 @@ public class MainView {
     }
 
     static void escolha(int op, LivroController livro){
-        Livro l = new Livro();
+        //Livro l = new Livro();
         int cont = 1;
         boolean validar = true;
 
@@ -42,8 +42,8 @@ public class MainView {
                 case 1:
 
                     do {
+                        Livro l = new Livro();
                         validar = case1(l,livro,cont,validar);
-                        l = new Livro();
                         cont ++;
                     } while (validar);
 
@@ -55,6 +55,7 @@ public class MainView {
 
                 case 3:
                      do{
+                         Livro l = new Livro();
                          int opcao = menuAtulizar();
                          atulizar(opcao,l,livro);
                          validar = continuar("Deseja Atulizar outro livro?");
@@ -67,6 +68,7 @@ public class MainView {
                     break;
 
                 case 4:
+                    Livro l = new Livro();
                     String Id = digiteId();
                     UUID id = UUID.fromString(Id);
                     l.setId(id);

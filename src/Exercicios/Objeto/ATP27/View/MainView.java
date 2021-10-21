@@ -50,13 +50,8 @@ public class MainView {
         System.out.println("Filmes cadastrados : "+fc.tamanho());
         System.out.println("Série cadastrados : "+sc.tamanho());
 
-        for (Filme filme: fc.read()) {
-            System.out.println(filme);
-        }
-
-        for (Serie serie: sc.read()) {
-            System.out.println(serie);
-        }
+        lista(fc);
+        lista(sc);
 
         if(fc.contains(f1)){
             System.out.println("Contém o filme");
@@ -80,7 +75,7 @@ public class MainView {
         f3.setDescricao("A história ocorre em 1799. O investigador...");
         f3.setGenero("Terror/Mistério");
         f3.setAno(1999);
-        fc.creat(f3);
+        fc.creat(f3);git
 
 
         s3.setTitulo("round 6");
@@ -92,13 +87,9 @@ public class MainView {
         System.out.println("Filmes cadastrados : "+fc.tamanho());
         System.out.println("Série cadastrados : "+sc.tamanho());
 
-        for (Filme filme: fc.read()) {
-            System.out.println(filme);
-        }
+        lista(fc);
+        lista(sc);
 
-        for (Serie serie: sc.read()) {
-            System.out.println(serie);
-        }
         System.out.println("==========================================================================");
 
         if(f1.equals(f3) && s1.equals(s3)){
@@ -110,30 +101,25 @@ public class MainView {
         System.out.println("Filmes cadastrados : "+fc.tamanho());
         System.out.println("Série cadastrados : "+sc.tamanho());
 
-        for (Filme filme: fc.read()) {
-            System.out.println(filme);
-        }
-
-        for (Serie serie: sc.read()) {
-            System.out.println(serie);
-        }
+        lista(fc);
+        lista(sc);
 
 
     }
 
-    /*public static void lista(Object obj){
-        if(obj instanceof Filme){
+    public static void lista(Object obj){
+        if(obj instanceof FilmeController){
            FilmeController filmeCon = (FilmeController)obj;
             for (Filme f: filmeCon.read()) {
                 System.out.println(f);
             }
         }
-        else if(obj instanceof Serie){
+        else if(obj instanceof SerieController){
             SerieController filmeCon = (SerieController)obj;
             for (Serie s: filmeCon.read()) {
                 System.out.println(s);
             }
         }
-    }*/
+    }
 
 }

@@ -75,7 +75,7 @@ public class MainView {
         f3.setDescricao("A história ocorre em 1799. O investigador...");
         f3.setGenero("Terror/Mistério");
         f3.setAno(1999);
-        fc.creat(f3);git
+        fc.creat(f3);
 
 
         s3.setTitulo("round 6");

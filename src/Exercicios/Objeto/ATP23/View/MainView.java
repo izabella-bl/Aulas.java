@@ -13,14 +13,18 @@ public class MainView {
     static  Livro l = new Livro();
 
     public static void main(String[] args) {
-        int op;
+        int op = 0;
 
         System.out.println("--------------Bem vindo!--------------");
         do {
             menu();
-            System.out.print("Informe a sua opção:");
-            op = Integer.parseInt(sc.nextLine());
-            escolha(op);
+            try{
+                System.out.print("Informe a sua opção:");
+                op = Integer.parseInt(sc.nextLine());
+                escolha(op);
+            }catch (Exception e){
+                System.out.println("Somente numeros!");
+            }
         } while (op != 5);
 
     }
@@ -52,7 +56,7 @@ public class MainView {
 
                 case 2:
                     if(lc.read().isEmpty()){
-                        System.out.println("\n(Não possui cadadatro.)\n");
+                        System.out.println("\n(Não possui cadastro.)\n");
                     }
                     else {
                         ListaLivro(lc);
@@ -61,7 +65,7 @@ public class MainView {
 
                 case 3:
                     if(lc.read().isEmpty()){
-                        System.out.println("\n(Não possui cadadatro.)\n");
+                        System.out.println("\n(Não possui cadastrogit .)\n");
                     }
                     else{
                         do{

@@ -21,8 +21,7 @@ public class MainView {
             System.out.print("Informe a sua opção:");
             op = Integer.parseInt(sc.nextLine());
             escolha(op);
-        }
-        while (op != 5);
+        } while (op != 5);
 
     }
 

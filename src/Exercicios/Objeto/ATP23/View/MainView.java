@@ -204,6 +204,7 @@ public class MainView {
                     l.setGenero(genero);
 
                     lc.update(l,op);
+
                 }catch (Exception e){
                     System.out.println("Não foi possível encontrar esse id!");
                 }

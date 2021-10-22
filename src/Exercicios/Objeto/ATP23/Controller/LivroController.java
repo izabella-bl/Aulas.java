@@ -31,6 +31,7 @@ public class LivroController {
                     l.setDescricao(livroAntigo.getDescricao());
                     l.setAnoDeLancamento(livroAntigo.getAnoDeLancamento());
                     livro.set(i,l);
+
                 }
                else if(op == 2){
                     Livro livroAntigo =  this.livro.get(i);
@@ -53,6 +54,9 @@ public class LivroController {
                     l.setDescricao(livroAntigo.getDescricao());
                     livro.set(i,l);
                 }
+            }
+            else{
+                System.out.println("Não possui esse Id na lista");
             }
 
         }

@@ -1,6 +1,7 @@
-package controllers;
+package Exercicios.Objeto.ATP29.controllers;
 
-import models.Produto;
+
+import Exercicios.Objeto.ATP29.models.Produto;
 
 public class ProdutoController extends BaseController<Produto>{
     

@@ -1,4 +1,4 @@
-package models;
+package Exercicios.Objeto.ATP29.models;
 
 public class BaseId {
     public String id;

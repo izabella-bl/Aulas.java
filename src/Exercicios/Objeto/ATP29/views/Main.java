@@ -1,9 +1,11 @@
-package views;
+package Exercicios.Objeto.ATP29.views;
+
+import Exercicios.Objeto.ATP29.controllers.ProdutoController;
+import Exercicios.Objeto.ATP29.models.Produto;
 
 import java.util.Scanner;
 
-import controllers.ProdutoController;
-import models.Produto;
+
 
 public class Main {
     static Scanner sc = new Scanner(System.in);

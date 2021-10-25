@@ -39,7 +39,6 @@ public class Main {
         }catch (Exception e){
             do {
                 try{
-                    System.out.println("Não pode ser divido por zero!");
                     System.out.println("Digite o 2° número novamente:");
                     num2 = Integer.parseInt(sc.nextLine());
                     novoNumero2 = num2;

@@ -38,6 +38,7 @@ public class Main {
             System.out.printf("Divisao: %.2f\n",resultado1);
         }catch (Exception e){
             do {
+                System.out.println("Não é possível fazer divisão por zero.");
                 try{
                     System.out.println("Digite o 2° número novamente:");
                     num2 = Integer.parseInt(sc.nextLine());

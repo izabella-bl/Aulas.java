@@ -32,8 +32,8 @@ public class Calculadora {
         return this.numero1 * this.numero2;
     }
 
-    public double divisao(int numero2) {
-        return (double) (this.numero1 / numero2);
+    public double divisao(double numero2) {
+        return ((double)(this.numero1) /(double)numero2);
     }
 
 
@@ -48,11 +48,7 @@ public class Calculadora {
         else  if(op == 3){
             return  "Multiplição: "+this.multiplicacao();
         }
-        else {
-            return String.format("RESULTADO:\nSOMA: %d\n" +
-                    "SUBTRAÇÃO :%d\n" +
-                    "MULTIPLICAÇÃO: %d\n", this.soma(), this.subtracao(), this.multiplicacao());
-        }
+        return "";
     }
 }
 

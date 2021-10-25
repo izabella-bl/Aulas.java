@@ -50,7 +50,7 @@ public class Main {
          return op;
      }
 
-     static void cases(int op,int num2 ,int antigoNumero2){
+     static void cases(int op,int num2 ,double antigoNumero2){
             switch (op) {
                 case 1:
                     System.out.println(cal.toString(1));
@@ -64,27 +64,28 @@ public class Main {
 
                 case 4:
                     int novoNumero2 = 0;
-                    try{
-                        double resultado1  = cal.divisao(antigoNumero2);
-                        System.out.printf("Divisao: %.2f\n",resultado1);
-                    }catch (Exception e){
 
+                    if(antigoNumero2 == 0) {
+                        System.out.println("Nâo é possível dividir por zero.");
                         do {
-                            System.out.println("Não é possível fazer divisão por zero.");
-                            try{
+                            try {
                                 System.out.println("Digite o 2° número novamente:");
                                 num2 = Integer.parseInt(sc.nextLine());
                                 novoNumero2 = num2;
-                            }catch (Exception ex){
+                            } catch (Exception ex) {
                                 System.out.println("Somente número inteiros!");
                             }
 
-                        }while (num2 == 0  );
+                        } while (num2 == 0);
 
                         double resultado2 = cal.divisao(novoNumero2);
-                        System.out.printf("DIVISÃO: %.2f\n",resultado2);
-
+                        System.out.printf("DIVISÃO: %.2f\n", resultado2);
                     }
+                    else{
+                        double resultado1  = cal.divisao(antigoNumero2);
+                        System.out.printf("Divisao: %.2f\n",resultado1);
+                    }
+
                     break;
                 case 5:
                     System.out.println("Até mais!");

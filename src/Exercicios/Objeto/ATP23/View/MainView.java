@@ -126,6 +126,7 @@ public class MainView {
     }
 
     static boolean case1(Livro l,int cont, boolean validar){
+        boolean validaAno = true;
         System.out.printf("\n===============Livro n° %d===========\n",cont);
         System.out.println("Informe o titulo do Livro:");
         String titulo = sc.nextLine();
@@ -136,8 +137,18 @@ public class MainView {
         System.out.println("Informe o gênero: ");
         String genero = sc.nextLine();
 
-        System.out.println("Informe o ano de lançamento do livro: ");
-        int ano = Integer.parseInt(sc.nextLine());
+        int ano = 0;
+        do{
+            try {
+                System.out.println("Informe o ano de lançamento do livro: ");
+                ano = Integer.parseInt(sc.nextLine());
+                validaAno = true;
+            }catch (Exception e){
+                System.out.println("Apenas números");
+                validaAno = false;
+            }
+        }while (!validaAno);
+
 
         l.setTitulo(titulo);
         l.setDescricao(descricao);

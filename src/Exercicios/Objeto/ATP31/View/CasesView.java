@@ -75,7 +75,6 @@ public class CasesView {
 
     public static Produto retorno(int op, Produto p){
         boolean valido = true;
-       // Produto p = new Produto();
 
         if(op == 3 || op == 4 ){
             try {
@@ -83,13 +82,6 @@ public class CasesView {
                 String Id2 = sc.nextLine();
                 UUID id2 = UUID.fromString(Id2);
                 p.setId(id2);
-                if(pc.existe(p)){
-                    System.out.println("Esta aqui ");
-                }
-               else {
-                    System.out.println(" nao esta");
-                }
-
 
             }catch (Exception E) {
                 System.out.println("Informação invalida!");

@@ -65,7 +65,7 @@ public class MainView {
 
                 case 3:
                     if(lc.read().isEmpty()){
-                        System.out.println("\n(Não possui cadastrogit .)\n");
+                        System.out.println("\n(Não possui cadastro.)\n");
                     }
                     else{
                         do{
@@ -183,7 +183,6 @@ public class MainView {
                     System.out.println("Digite o novo titulo:");
                     String novoTitulo = sc.nextLine();
                     l.setTitulo(novoTitulo);
-
                     lc.update(l,op);
                 }catch (Exception e){
                     System.out.println("Não foi possível encontrar esse id!");

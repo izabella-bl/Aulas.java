@@ -1,5 +1,7 @@
 package Exercicios.Objeto.ATP31.Model;
 
+import java.util.Objects;
+
 public class Produto extends BaseId{
     private  String nome;
     private  String descricao;
@@ -47,4 +49,7 @@ public class Produto extends BaseId{
                             "Categoria: %s\n" +
                             "Preço: R$ %.2f",this.getId().toString(),this.nome,this.descricao,this.categoria,this.preço);
     }
+
+
+
 }

@@ -29,7 +29,7 @@ public class BaseId {
     public boolean equals(Object obj) {
         if(obj instanceof  BaseId){
             BaseId id1 = (BaseId) obj;
-            if (this.id == id1.getId()){
+            if (this.id.compareTo(id1.getId()) == 0){
                 return true;
             }
         }

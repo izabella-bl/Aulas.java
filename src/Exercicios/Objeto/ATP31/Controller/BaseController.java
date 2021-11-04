@@ -2,7 +2,7 @@ package Exercicios.Objeto.ATP31.Controller;
 
 import java.util.ArrayList;
 
-public class BaseController <D>{
+ abstract class BaseController <D>{
     private ArrayList<D> lista;
 
     public  BaseController(){

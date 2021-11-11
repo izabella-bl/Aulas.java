@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class PessoaDao extends BaseDao<Pessoa> {
     public PessoaDao() {
-        super("src/Ezercicios/JavaIo/P1/Dados/Pessoa.csv");
+        super("src/Exercicios/JavaIo/P1/Dados/Pessoa.csv");
     }
 
     public ArrayList<Object> list(){

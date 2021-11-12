@@ -23,7 +23,7 @@ public class View2 {
             ResultSet ids = statement.getGeneratedKeys();
 
             while (ids.next()) {
-                int id = ids.getInt(1);
+                int id = ids.getInt("id");
                 System.out.printf("id nº: %s inserido com sucesso! ",id);
             }
 

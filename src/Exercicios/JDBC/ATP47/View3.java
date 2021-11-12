@@ -18,12 +18,14 @@ public class View3 {
             Connection coon = DriverManager.getConnection(connectionString,database, pwd);
 
             Statement statement = coon.createStatement();
-            String sql = "update categoria set nome = 'Eletro' where id = 1; update categoria set nome = 'Alimentos' where id = 2;";
+            String sql = "update categoria set nome = 'Eletro' where id = 1; ";
+            String sql2 = "update categoria set nome = 'Alimentos' where id = 2;";
 
             statement.execute(sql);
-
             int linhasAfetadas = statement.getUpdateCount();
-            System.out.println(linhasAfetadas);   
+            statement.execute(sql2);
+            int linhasAfetadas2 = statement.getUpdateCount();
+            System.out.println(linhasAfetadas + linhasAfetadas2);   
            
             coon.close();
 

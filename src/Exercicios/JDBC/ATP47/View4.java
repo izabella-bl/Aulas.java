@@ -1,4 +1,4 @@
-package Exercicios.JDBC.ATP46;
+package Exercicios.JDBC.ATP47;
 
 import java.sql.*;
 
@@ -16,7 +16,7 @@ public class View4 {
             Connection conn = DriverManager.getConnection(connectionString,database,pwd);
             
             Statement statement = conn.createStatement();
-            String sql = "DELETE FROM produto WHERE id  = 5";
+            String sql = "DELETE FROM categoria WHERE nome = 'Açougue' and id > 6";
             statement.execute(sql);   
                  
         

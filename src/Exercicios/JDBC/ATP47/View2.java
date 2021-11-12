@@ -1,10 +1,10 @@
-package Exercicios.JDBC.ATP46;
+package Exercicios.JDBC.ATP47;
 
 import java.sql.*;
 
-public class View4 {
+public class View2 {
     public static void main(String[] args) {
-        try {
+        try{
             String driverType = "jdbc";
             String driverName = "postgresql";
             String host = "localhost";
@@ -14,15 +14,25 @@ public class View4 {
 
             String connectionString = String.format("%s:%s://%s:%d/%s",driverType,driverName,host,port,database);
             Connection conn = DriverManager.getConnection(connectionString,database,pwd);
-            
+
             Statement statement = conn.createStatement();
-            String sql = "DELETE FROM produto WHERE id  = 5";
-            statement.execute(sql);   
-                 
+            String sql = "insert into categoria(nome,descricao) values('Açougue','Variedade de carnes')";
+    
+            statement.execute(sql, statement.RETURN_GENERATED_KEYS);
+
+            ResultSet ids = statement.getGeneratedKeys();
+
+            while (ids.next()) {
+                int id = ids.getInt(1);
+                System.out.printf("id nº: %s inserido com sucesso! ",id);
+            }
+
         
-           conn.close();
-        } catch (SQLException e) {
+         conn.close();
+
+        }catch( SQLException e){
             e.printStackTrace();
         }
+
     }
 }
